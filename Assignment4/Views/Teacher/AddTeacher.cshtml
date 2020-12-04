@@ -1,0 +1,16 @@
+﻿@model Assignment4.Models.Teacher
+@{
+    ViewBag.Title = "Add Teacher";
+}
+<div id="containershow">
+
+    <nav>
+        <a class="navlink" href="/Teacher/Show/@Model.Teacherid">Cancel</a>
+    </nav>
+    <h2>Do you want to add: @Model.TeacherFname?</h2>
+    
+
+    <form method="POST" action="/Teacher/Add/@Model.Teacherid">
+        <button>Confirm Adding</button>
+    </form>
+</div>

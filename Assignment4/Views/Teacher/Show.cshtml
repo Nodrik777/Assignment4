@@ -1,0 +1,13 @@
+﻿@model Assignment4.Models.Teacher
+@{
+    ViewBag.Title = "Show";
+}
+
+<div id="containershow">
+    <nav>
+        <a class="navlink" href="/Teacher/List">Back to Teachers</a>
+        <a class="dellink" href="/Teacher/DeleteConfirm/@Model.Teacherid">Delete Teacher</a>
+        <a class="dellink" href="/Teacher/AddTeacher/@Model.Teacherid">Add Teacher</a>
+    </nav>
+    <h2> @Model.TeacherFname @Model.TeacherLname</h2>
+</div>

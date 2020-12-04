@@ -1,0 +1,20 @@
+﻿@model Assignment4.Models.Teacher
+@{
+    ViewBag.Title = "Delete Confirm";
+}
+<div id="containershow">
+
+    <nav>
+        <a class="navlink" href="/Teacher/Show/@Model.Teacherid">Cancel</a>
+    </nav>
+    <h2>Do you want to delete info about: @Model.TeacherFname?</h2>
+    <p>This action cannot be undone</p>
+
+    <form method="POST" action="/Teacher/Delete/@Model.Teacherid">
+        <button>Confirm Delete</button>
+    </form>
+</div>
+
+
+//'Terminate' view does not work but i have tried to delete and create new one
+
